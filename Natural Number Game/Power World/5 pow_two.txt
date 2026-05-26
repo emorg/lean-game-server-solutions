@@ -1,0 +1,3 @@
+rw [two_eq_succ_one, pow_succ]
+rw [pow_one]
+rfl

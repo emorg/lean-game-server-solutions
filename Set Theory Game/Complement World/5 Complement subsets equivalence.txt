@@ -1,0 +1,10 @@
+apply Iff.intro
+
+intro h1
+apply compl_subset_compl_of_subset
+exact h1
+
+intro h1
+apply compl_subset_compl_of_subset at h1
+rw [compl_compl, compl_compl] at h1
+exact h1

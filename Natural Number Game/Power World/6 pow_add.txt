@@ -1,0 +1,11 @@
+induction m with d hd
+
+rw [zero_add, pow_zero, one_mul]
+rfl
+
+rw [pow_succ]
+rw [mul_comm (a^d), mul_assoc a, ← hd]
+rw [mul_comm a, ← pow_succ a]
+repeat rw [succ_eq_add_one]
+rw [add_comm (d+n), ← add_assoc 1, add_comm d]
+rfl

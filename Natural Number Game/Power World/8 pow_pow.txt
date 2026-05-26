@@ -1,0 +1,9 @@
+induction n with d hd
+
+rw [pow_zero, mul_zero, pow_zero]
+rfl
+
+rw [pow_succ, hd]
+rw [mul_succ]
+rw [pow_add]
+rfl

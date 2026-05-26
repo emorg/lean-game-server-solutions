@@ -1,0 +1,11 @@
+induction n with d hd
+
+repeat rw [pow_zero]
+rw [mul_one]
+rfl
+
+repeat rw [pow_succ]
+rw [hd]
+rw [mul_assoc, ← mul_assoc (b^d), mul_comm (b^d)]
+rw [← mul_assoc, ← mul_assoc, mul_assoc]
+rfl

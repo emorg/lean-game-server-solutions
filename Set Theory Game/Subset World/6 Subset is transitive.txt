@@ -1,0 +1,6 @@
+intro x
+intro h3
+
+have h4 : x ∈ B := h1 h3
+have h5: x ∈ C := h2 h4
+exact h5

@@ -1,0 +1,5 @@
+by_contra h3
+
+have h4 : x ∈ B
+exact h3 h1
+exact h2 h4
