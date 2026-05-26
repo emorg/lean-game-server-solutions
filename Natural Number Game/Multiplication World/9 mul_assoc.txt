@@ -1,0 +1,9 @@
+induction a with d hd
+
+repeat rw [zero_mul]
+rfl
+
+repeat rw [succ_mul]
+rw [mul_comm, mul_add, mul_comm c, hd]
+rw [mul_comm b]
+rfl

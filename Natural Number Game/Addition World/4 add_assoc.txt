@@ -1,0 +1,9 @@
+induction a with d hd
+
+repeat rw [zero_add]
+rfl
+
+nth_rewrite 2 [succ_add]
+rw [← hd]
+repeat rw [succ_add]
+rfl

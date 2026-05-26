@@ -1,0 +1,3 @@
+rw [add_assoc, add_assoc a]
+rw [add_comm c]
+rfl

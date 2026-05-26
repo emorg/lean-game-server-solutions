@@ -1,0 +1,9 @@
+induction b with k h
+
+repeat rw [add_zero]
+rfl
+
+rw [add_succ]
+rw [h]
+rw [add_succ]
+rfl

@@ -1,0 +1,7 @@
+induction b with d hd
+
+rw [zero_mul, mul_zero]
+rfl
+
+rw [mul_succ, succ_mul, hd]
+rfl

@@ -1,0 +1,4 @@
+rw [two_eq_succ_one, one_eq_succ_zero]
+repeat rw [succ_mul]
+rw [zero_mul, zero_add]
+rfl

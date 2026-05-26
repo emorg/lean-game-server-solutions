@@ -1,0 +1,11 @@
+induction b with d hd
+
+repeat rw [mul_zero]
+rw [add_zero]
+rfl
+
+repeat rw [mul_succ]
+rw [hd, succ_eq_add_one, succ_eq_add_one]
+rw [← add_assoc, ← add_assoc]
+nth_rewrite 4 [add_right_comm]
+rfl
