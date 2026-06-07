@@ -1,0 +1,10 @@
+intro x
+intro h3
+
+rcases h3
+
+apply h1 at h
+exact h
+
+apply h2 at h
+exact h

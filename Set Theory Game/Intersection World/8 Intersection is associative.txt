@@ -1,0 +1,11 @@
+ext x
+
+apply Iff.intro
+
+intro h1
+have h2 : x ∈ B ∧ x ∈ C := And.intro h1.left.right h1.right
+apply And.intro h1.left.left h2
+
+intro h3
+have h4 : x ∈ A ∧ x ∈ B := And.intro h3.left h3.right.left
+apply And.intro h4 h3.right.right

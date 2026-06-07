@@ -1,0 +1,6 @@
+intro x
+intro h
+
+have h3 : x ∈ B := h1 h
+have h4 : x ∈ C := h2 h
+apply And.intro h3 h4

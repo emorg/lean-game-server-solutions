@@ -1,0 +1,4 @@
+intro x
+intro h1
+
+apply And.intro h1.right h1.left

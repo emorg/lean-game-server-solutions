@@ -1,0 +1,8 @@
+intro x
+intro h
+
+rcases h
+
+exact Or.inr h
+
+exact Or.inl h

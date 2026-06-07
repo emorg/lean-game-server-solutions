@@ -1,0 +1,4 @@
+intro x
+intro h
+
+exact Or.inr h
